@@ -251,6 +251,7 @@ ul {
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 200, .1);
   margin-top: 25px;
   border-radius: 8px;
+  min-width: 50%;
 }
 
 #contact .mine {
@@ -273,6 +274,7 @@ input, textarea {
   opacity: 0.5;
   padding: 0.2rem 1rem;
   font-size: 1.1rem;
+  margin-top: 5px;
 }
 
 input:active {
@@ -289,7 +291,7 @@ legend {
 
 input[type="submit"]{
   border-radius: 3px;
-  width: 100%;
+  width: 80%;
   font-weight: bold;
   font-size: 1rem;
   color: #fff;
@@ -305,4 +307,51 @@ footer {
 
 footer p {
   color: #456;
+}
+
+
+/* Responsive */
+
+
+@media (max-width: 800px) {
+  body {
+    background: #aaa;
+    font-family: "lato", verdana;
+    font-size: 0.8rem;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #landing-page {
+    flex-direction: column;
+    justify-content: center;
+}
+
+  #landing-page .left-side, #landing-page .right-side{
+    width: 80%;  
+    align-items: center;
+    padding: 2rem;
+}
+
+  #landing-page .right-side img{
+    width: 90%;
+  }
+
+  #landing-page h1 {
+    font-size: 1.4rem;
+  }
+  
+  #projects .projects-gallery{
+    margin: 50px;
+    padding: 15px;
+    width: 80%;
+    flex-direction: column;
+}
+
+#projects .projects-gallery .projects-card {
+  justify-content: center;
+  width: 80%;
+} 
 }
