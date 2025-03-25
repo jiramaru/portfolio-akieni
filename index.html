@@ -1,153 +1,354 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Les Ateliers de tonton Deo</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-
-    <header>
-      <span class="logo"></span>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="landing-page">
-     <div class="left-side">
-      <h1 id="title">Who am I</h1>
-
-      <h3>I am Deo BATA</h3>
-      <p>Just a chill guy who likes messing up with computers and learning new stuff</p>
-      <p>A <span class="bold">Fullstack developper</span> and software engineer</p>
-      <p>Beatmaker and Basketball player in my younger ages.</p>
-      <div class="action-buttons">
-        <!--github linkIn facebook-->
-        <a href="https://github.com/jiramaru" target="_blank"> Github
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
-        </a>
-
-        <a class="action-item" href="https://www.linkedin.com/in/gr%C3%A2ce-bata-bb6157356/" target="_blank"> LinkedIn
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
-          </a>
-      </div>
-     </div> 
-     <div class="right-side">
-      <img src="imgs/Deo 2.png" alt="Deo">
-     </div>
-        
-    </section>    
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-gallery">
-
-        <div class="projects-card">
-          <h3>NetworkTool</h3>
-          <img src="imgs/projects/project1.png" alt="">
-          <div class="description">
-           This app is designed to help Network engineers while making operations on IPv4 
-          </div>
-        </div>
-        <div class="projects-card">
-          
-          <h3>Task Manager</h3>
-          <img src="imgs/projects/project2.png" alt="">
-          <div class="description">
-            Task Manager built on <span class="bold">React</span>
-          </div>
-        </div>
-        <div class="projects-card">
-          <h3>Space Invader</h3>
-          <video src="imgs/projects/project3.mp4" controls>
-          </video>
-          <div class="description">
-            This is one of my first games built on <span class="bold">Python</span>
-          </div>
-
-        </div>
-    </section>
-
-    <section id="about">
-      
-      <h2>About</h2>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div class="container">
-        
-
-      <div class="left">
-        <h3>Diplômes</h3>
-          <ul>
-            <li>Bac scientifique (2019)</li>
-            <li>BTS en Alanyse et Programmation (en cours...)</li>
-          </ul>
-          <hr>
-          <h3>More...</h3>
-          <ul>
-            <li>Styding FullStack Dev. at Akieni Academy</li>
-          </ul>
-      </div>
-      
-      <div class="right">
-          <h3>Langues</h3>
-          <div>
-            <ul>
-              <li>English <span class="italic">fluently</span></li>
-              <li>French <span class="italic">fluently</span></li>
-            </ul>
-          </div>
-          <hr>
-          <h3>hobbies</h3>
-          <ul>
-            <li>Musique</li>
-            <li>BasketBall</li>
-            <li>Animes</li>
-          </ul>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-        <div class="mine">
-          <h3>Telephone:</h3>
-          <ul>
-            <li>06 924 06 03</li>
-            <li>06 663 44 25</li>
-          </ul>
-
-          <h3>Mail:</h3>
-          <ul>
-            <li>ode808prod@gmail.com</li>
-            <li>deo.bata@outlook.com</li>
+        <a class="navbar-brand" href="#">Deo BATA</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </div>
+      </div>
+    </nav>
 
-      <form class="form" action="">
-
-        <fieldset>
-          <legend>Leave a message</legend>
-
-         <label class="contact-form-detail" for="name">Name: <input type="text" name="name" placeholder="Arthur KAZA" required></label>
-         <label class="contact-form-detail" for="email">Email: <input type="email" name="email" placeholder="auriane@akieni.com" required></label>
-         <label class="contact-form-detail" for="description">Description: 
-          <textarea rows="4" cols="50" placeholder="I really like your work Deo"></textarea>
-         </label>
-        </fieldset>
-        <input type="submit" name="submit" value="Submit">
-      </form>
-
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center min-vh-100">
+          <div class="col-lg-6" data-aos="fade-right">
+            <h1 class="display-4 fw-bold">Deo BATA</h1>
+            <h3 class="text-gradient">Développeur Fullstack & Ingénieur Logiciel</h3>
+            <p class="lead">Passionné par le développement et l'innovation technologique</p>
+            <div class="social-links mt-4">
+              <a href="https://github.com/jiramaru" target="_blank" class="me-3"><i class="fab fa-github fa-2x"></i></a>
+              <a href="https://www.linkedin.com/in/grâce-bata-bb6157356/" target="_blank" class="me-3"><i class="fab fa-linkedin fa-2x"></i></a>
+              <a href="#" target="_blank" class="me-3"><i class="fab fa-twitter fa-2x"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="right-side">
+              <div class="profile-container">
+                <div class="profile-3d-wrapper" data-tilt data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="1000">
+                  <img src="imgs/Deo 2.png" alt="Deo" class="profile-image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-      <p>copyright &copy; 2025, Deo BATA</p>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Mes Services</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="zoom-in">
+            <div class="service-card">
+              <i class="fas fa-laptop-code service-icon"></i>
+              <h3>Développement Full Remote</h3>
+              <p>Développement de solutions sur mesure avec une collaboration 100% à distance</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="service-card">
+              <i class="fas fa-mobile-alt service-icon"></i>
+              <h3>Applications Mobiles</h3>
+              <p>Création d'applications mobiles natives et cross-platform</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="400">
+            <div class="service-card">
+              <i class="fas fa-server service-icon"></i>
+              <h3>Architecture Cloud</h3>
+              <p>Conception et déploiement d'architectures cloud scalables</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Mes Projets</h2>
+        <div class="row">
+          <div class="col-md-4 mb-4" data-aos="flip-left">
+            <div class="card project-card">
+              <img src="imgs/projects/project1.png" class="card-img-top" alt="NetworkTool">
+              <div class="card-body">
+                <h5 class="card-title">NetworkTool</h5>
+                <p class="card-text">Application d'aide aux ingénieurs réseau pour les opérations IPv4</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="200">
+            <div class="card project-card">
+              <img src="imgs/projects/project2.png" class="card-img-top" alt="Task Manager">
+              <div class="card-body">
+                <h5 class="card-title">Task Manager</h5>
+                <p class="card-text">Gestionnaire de tâches développé avec React</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-delay="400">
+            <div class="card project-card">
+              <video class="card-img-top" controls>
+                <source src="imgs/projects/project3.mp4" type="video/mp4">
+              </video>
+              <div class="card-body">
+                <h5 class="card-title">Space Invader</h5>
+                <p class="card-text">Jeu développé en Python</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container-fluid px-4">
+        <h2 class="text-center mb-5" data-aos="fade-up">À Propos</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4" data-aos="fade-right">
+            <div class="about-card education-card h-100">
+              <div class="card-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <h3>Formation</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2019</span>
+                  <h4>Bac scientifique</h4>
+                  <p>Diplôme obtenu avec succès</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">En cours</span>
+                  <h4>BTS Analyse et Programmation</h4>
+                  <p>Formation en cours</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">Actuel</span>
+                  <h4>Akieni Academy</h4>
+                  <p>Formation FullStack Developer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-up">
+            <div class="about-card skills-card h-100">
+              <div class="card-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h3>Compétences</h3>
+              <div class="skill-group">
+                <h4>Développement</h4>
+                <div class="skill-item">
+                  <span>Frontend</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Backend</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span>Base de données</span>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="skill-group">
+                <h4>Langues</h4>
+                <div class="language-item">
+                  <i class="fas fa-language"></i>
+                  <span>Anglais</span>
+                  <span class="level">Courant</span>
+                </div>
+                <div class="language-item">
+                  <i class="fas fa-language"></i>
+                  <span>Français</span>
+                  <span class="level">Natif</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4" data-aos="fade-left">
+            <div class="about-card interests-card h-100">
+              <div class="card-icon">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3>Passions</h3>
+              <div class="interests-grid">
+                <div class="interest-item">
+                  <i class="fas fa-music"></i>
+                  <span>Musique</span>
+                  <p>Beatmaker</p>
+                </div>
+                <div class="interest-item">
+                  <i class="fas fa-basketball-ball"></i>
+                  <span>Basketball</span>
+                  <p>Joueur passionné</p>
+                </div>
+                <div class="interest-item">
+                  <i class="fas fa-film"></i>
+                  <span>Animes</span>
+                  <p>Culture japonaise</p>
+                </div>
+                <div class="interest-item">
+                  <i class="fas fa-laptop-code"></i>
+                  <span>Coding</span>
+                  <p>Développement</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">Contact</h2>
+        <div class="row g-5">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="contact-info-card">
+              <div class="contact-header">
+                <img src="imgs/Deo 2.png" alt="Deo" class="contact-avatar">
+                <h3>Deo BATA</h3>
+                <p class="text-gradient">Développeur Fullstack</p>
+              </div>
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <div>
+                    <h4>Téléphone</h4>
+                    <p>06 924 06 03</p>
+                    <p>06 663 44 25</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p>ode808prod@gmail.com</p>
+                    <p>deo.bata@outlook.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h4>Localisation</h4>
+                    <p>France</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-social">
+                <a href="https://github.com/jiramaru" target="_blank" class="social-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/grâce-bata-bb6157356/" target="_blank" class="social-icon">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" target="_blank" class="social-icon">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="contact-form-card">
+              <h3>Envoyez-moi un message</h3>
+              <form class="contact-form">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="name" placeholder="Votre nom" required>
+                      <label for="name">Votre nom</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="email" placeholder="Votre email" required>
+                      <label for="email">Votre email</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="subject" placeholder="Sujet">
+                      <label for="subject">Sujet</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea class="form-control" id="message" placeholder="Votre message" style="height: 150px" required></textarea>
+                      <label for="message">Votre message</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-danger w-100">
+                      <i class="fas fa-paper-plane me-2"></i>Envoyer le message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 bg-dark text-white">
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2025 Deo BATA. Tous droits réservés.</p>
+      </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
